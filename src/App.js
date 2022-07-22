@@ -30,10 +30,6 @@ export default function App() {
 
   //Run Once at startup
   useEffect(() => {
-    /* console.log(
-      "fixed last completed not being replaced by new completed 16.5555555555/10"
-    ); */
-
     if (!localStorage.gushipro) {
       localStorage.gushipro = JSON.stringify({
         todos,
@@ -68,8 +64,6 @@ export default function App() {
 
       //Check whether it is the next day, if it is we add COMPLETED to our HISTORY
       if (newDate !== settings.lastUpdated && settings.done.length > 0) {
-        console.log("changing date (ON STARTUP)!!!");
-
         setCompletedTodos((completedTodos) => {
           //Set new date
           setHist((hist) => [...hist, ...completedTodos]);
