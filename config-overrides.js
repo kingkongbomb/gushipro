@@ -11,7 +11,15 @@ module.exports = function override(config, env) {
         exposes: {
           "./App": "./src/App",
         },
+        shared: {
+          react: { singleton: true },
+          "react-dom": { singleton: true },
+        },
       }),
     ],
+    output: {
+      ...config.output,
+      publicPath: "http://localhost:3001/",
+    },
   };
 };

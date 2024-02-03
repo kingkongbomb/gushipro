@@ -20,7 +20,8 @@
     "start": "set PORT=3001 && react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "all": "react-app-rewired build && serve -s -l 3001 build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,7 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": ".",
   "volta": {
     "node": "16.19.0"
   }
