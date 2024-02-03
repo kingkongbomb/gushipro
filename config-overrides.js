@@ -19,7 +19,7 @@ module.exports = function override(config, env) {
     ],
     output: {
       ...config.output,
-      publicPath: "http://localhost:3001/",
+      publicPath: "auto",
     },
   };
 };
