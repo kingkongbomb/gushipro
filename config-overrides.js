@@ -11,10 +11,13 @@ module.exports = function override(config, env) {
         exposes: {
           "./App": "./src/App",
         },
-        shared: {
-          react: { singleton: true },
-          "react-dom": { singleton: true },
-        },
+        shared: ["react"],
+        // shared: {
+        //   react: {
+        //     singleton: true,
+        //     eager: false,
+        //   },
+        // },
       }),
     ],
     output: {
