@@ -1,3 +1,5 @@
+import "papercss";
+import './overwrite-paper.css'
 import { useEffect, useState } from "react";
 import Todos from "./pages/todos";
 import InProgress from "./pages/inProgress";
